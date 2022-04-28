@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chernobylv:block/raw_coal_ore_block"
+    }
+  }
+}

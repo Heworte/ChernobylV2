@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chernobylv:blocks/rawcoalblock",
+    "up": "chernobylv:blocks/rawcoalblock",
+    "north": "chernobylv:blocks/rawcoalblock",
+    "east": "chernobylv:blocks/rawcoalblock",
+    "south": "chernobylv:blocks/rawcoalblock",
+    "west": "chernobylv:blocks/rawcoalblock",
+    "particle": "chernobylv:blocks/rawcoalblock"
+  }
+}

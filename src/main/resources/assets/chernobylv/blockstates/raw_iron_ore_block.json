@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chernobylv:block/raw_iron_ore_block"
+    }
+  }
+}

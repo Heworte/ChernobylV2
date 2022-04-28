@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chernobylv:blocks/rawironore",
+    "up": "chernobylv:blocks/rawironore",
+    "north": "chernobylv:blocks/rawironore",
+    "east": "chernobylv:blocks/rawironore",
+    "south": "chernobylv:blocks/rawironore",
+    "west": "chernobylv:blocks/rawironore",
+    "particle": "chernobylv:blocks/rawironore"
+  }
+}

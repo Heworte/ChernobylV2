@@ -1,0 +1,12 @@
+{
+  "group": "chernobylv",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "chernobylv:raw_coal_block"
+  },
+  "result": {
+    "item": "minecraft:coal"
+  }
+}

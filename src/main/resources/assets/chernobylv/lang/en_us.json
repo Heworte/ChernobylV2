@@ -1,0 +1,8 @@
+{
+  "block.chernobylv.raw_coal_block": "Raw Coal Block",
+  "block.chernobylv.raw_iron_ore_block": "Raw Iron Ore Block",
+  "item.chernobylv.raw_iron": "Raw Iron",
+  "item.chernobylv.raw_coal": "Raw Coal",
+  "itemGroup.tabchernobyl": "Chernobyl",
+  "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block"
+}

@@ -1,0 +1,139 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "RawCoal",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal"
+    },
+    {
+      "name": "Chernobyl",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chernobyl"
+    },
+    {
+      "name": "CoalBlastRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_blast_recipe"
+    },
+    {
+      "name": "RawCoalOreBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal_ore_block"
+    },
+    {
+      "name": "RawCoalOreBlockCraftingRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal_ore_block_crafting_recipe"
+    },
+    {
+      "name": "RawCoalBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal_block"
+    },
+    {
+      "name": "RawCoalBlockRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal_block_recipe"
+    },
+    {
+      "name": "RawIron",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron"
+    },
+    {
+      "name": "RawIronLoot",
+      "type": "loottable",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_loot"
+    },
+    {
+      "name": "RawIronOreBlock",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_ore_block"
+    },
+    {
+      "name": "RawCoalLoot",
+      "type": "loottable",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_coal_loot"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.chernobylv.raw_coal_block": "Raw Coal Block",
+      "block.chernobylv.raw_iron_ore_block": "Raw Iron Ore Block",
+      "item.chernobylv.raw_iron": "Raw Iron",
+      "item.chernobylv.raw_coal": "Raw Coal",
+      "itemGroup.tabchernobyl": "Chernobyl",
+      "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "chernobylv",
+    "modName": "chernobylv2",
+    "version": "0.0.3",
+    "author": "Heworte",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.chernobylv",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

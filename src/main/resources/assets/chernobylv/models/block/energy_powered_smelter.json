@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chernobylv:blocks/energypoweredsmelter",
+    "up": "chernobylv:blocks/energypoweredsmelter",
+    "north": "chernobylv:blocks/energypoweredsmelter",
+    "east": "chernobylv:blocks/energypoweredsmelter",
+    "south": "chernobylv:blocks/energypoweredsmelter",
+    "west": "chernobylv:blocks/energypoweredsmelter",
+    "particle": "chernobylv:blocks/energypoweredsmelter"
+  }
+}

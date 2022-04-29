@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chernobylv:blocks/generator",
+    "up": "chernobylv:blocks/generator",
+    "north": "chernobylv:blocks/generator",
+    "east": "chernobylv:blocks/generator",
+    "south": "chernobylv:blocks/generator",
+    "west": "chernobylv:blocks/generator",
+    "particle": "chernobylv:blocks/generator"
+  }
+}

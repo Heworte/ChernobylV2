@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:RawIronBlock"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:RawCoalBlock"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:Test"
+    },
+    "name": "miners_decotion_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chernobylv:block/generator"
+    },
+    "facing=east": {
+      "model": "chernobylv:block/generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chernobylv:block/generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chernobylv:block/generator",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chernobylv:block/energy_powered_smelter"
+    },
+    "facing=east": {
+      "model": "chernobylv:block/energy_powered_smelter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chernobylv:block/energy_powered_smelter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chernobylv:block/energy_powered_smelter",
+      "y": 270
+    }
+  }
+}

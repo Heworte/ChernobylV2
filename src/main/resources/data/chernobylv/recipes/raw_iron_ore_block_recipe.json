@@ -8,35 +8,35 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:sand"
     },
     "1": {
       "item": "minecraft:gravel"
     },
     "2": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:sand"
     },
     "3": {
       "item": "minecraft:gravel"
     },
     "4": {
-      "item": "minecraft:oak_log"
+      "item": "minecraft:flint"
     },
     "5": {
       "item": "minecraft:gravel"
     },
     "6": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:sand"
     },
     "7": {
       "item": "minecraft:gravel"
     },
     "8": {
-      "item": "minecraft:cobblestone"
+      "tag": "minecraft:sand"
     }
   },
   "result": {
-    "item": "chernobylv:raw_coal_ore_block",
+    "item": "chernobylv:raw_iron_ore_block",
     "count": 2
   }
 }

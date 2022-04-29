@@ -126,7 +126,7 @@ public class RawIronOreBlockBlock extends ChernobylvModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(30)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(40)
 					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("raw_iron_ore_block"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("chernobylv:raw_iron_ore_block"), configuredFeature);

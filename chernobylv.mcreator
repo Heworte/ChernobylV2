@@ -219,21 +219,123 @@
           }
         ]
       }
+    },
+    {
+      "name": "RawIronOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_ore_block_recipe"
+    },
+    {
+      "name": "IronRawIronRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_raw_iron_recipe"
+    },
+    {
+      "name": "Test",
+      "type": "potion",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
+      "name": "MinersDecotionRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "miners_decotion_recipe"
+    },
+    {
+      "name": "Generator",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generator"
+    },
+    {
+      "name": "EnergyPoweredSmelter",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_powered_smelter"
+    },
+    {
+      "name": "EnergyPoweredSmelterGUI",
+      "type": "gui",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_powered_smelter_gui"
+    },
+    {
+      "name": "EnergyPoweredSmelterGUIProc",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_powered_smelter_gui_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.minecraft.tipped_arrow.effect.test": "Arrow with Miner\u0027s Decoction",
+      "block.chernobylv.raw_iron_block_smelter": "Raw Iron Block Smelter",
+      "block.chernobylv.generator": "Generator",
+      "item.chernobylv.raw_coal": "Raw Coal",
+      "block.chernobylv.raw_iron_block": "Raw Iron Block",
+      "item.minecraft.splash_potion.effect.test": "Miner\u0027s Decoction Splash Edition",
+      "item.minecraft.lingering_potion.effect.test": "Miner\u0027s Decoction Lingering Edition",
       "block.chernobylv.raw_coal_block": "Raw Coal Block",
       "block.chernobylv.raw_iron_ore_block": "Raw Iron Ore Block",
-      "block.chernobylv.raw_iron_block_smelter": "Raw Iron Block Smelter",
       "item.chernobylv.raw_iron": "Raw Iron",
       "item.chernobylv.medium_raw_iron_ingot": "Medium Raw Iron Ingot",
-      "item.chernobylv.raw_coal": "Raw Coal",
+      "item.minecraft.potion.effect.test": "Miner\u0027s Decoction",
       "itemGroup.tabchernobyl": "Chernobyl",
       "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block",
-      "block.chernobylv.raw_iron_block": "Raw Iron Block"
+      "block.chernobylv.energy_powered_smelter": "Energy Powered Smelter"
     }
   },
   "foldersRoot": {
@@ -243,7 +345,7 @@
   "workspaceSettings": {
     "modid": "chernobylv",
     "modName": "chernobylv2",
-    "version": "0.0.5",
+    "version": "0.0.9",
     "author": "Heworte",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

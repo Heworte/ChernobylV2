@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "chernobylv:medium_raw_iron_ingot"
+  },
+  "addition": {
+    "item": "chernobylv:medium_raw_iron_ingot"
+  },
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}

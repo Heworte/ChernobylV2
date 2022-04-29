@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 2,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.SAND"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.SAND"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Items.FLINT"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.SAND"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.GRAVEL"
       },
       {
-        "value": "CUSTOM:RawCoal"
+        "value": "Blocks.SAND"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:RawCoalBlock"
+      "value": "CUSTOM:RawIronOreBlock"
     },
-    "name": "raw_coal_block_recipe",
+    "name": "raw_iron_ore_block_recipe",
     "namespace": "mod"
   }
 }

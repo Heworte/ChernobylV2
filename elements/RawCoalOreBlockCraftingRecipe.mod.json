@@ -5,19 +5,10 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
       {
         "value": "Blocks.COBBLESTONE"
       },
@@ -28,10 +19,19 @@
         "value": "Blocks.COBBLESTONE"
       },
       {
+        "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      },
+      {
         "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.GRAVEL"
       },
       {
         "value": "Blocks.COBBLESTONE"

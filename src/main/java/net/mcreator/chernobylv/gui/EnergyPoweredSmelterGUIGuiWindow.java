@@ -5,16 +5,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
-
-import net.mcreator.chernobylv.ChernobylvMod;
 
 import java.util.HashMap;
 
@@ -22,12 +18,12 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class RawIronSmelterGUIGuiWindow extends ContainerScreen<RawIronSmelterGUIGui.GuiContainerMod> {
+public class EnergyPoweredSmelterGUIGuiWindow extends ContainerScreen<EnergyPoweredSmelterGUIGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	private final static HashMap guistate = RawIronSmelterGUIGui.guistate;
-	public RawIronSmelterGUIGuiWindow(RawIronSmelterGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	private final static HashMap guistate = EnergyPoweredSmelterGUIGui.guistate;
+	public EnergyPoweredSmelterGUIGuiWindow(EnergyPoweredSmelterGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,7 +33,7 @@ public class RawIronSmelterGUIGuiWindow extends ContainerScreen<RawIronSmelterGU
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("chernobylv:textures/raw_iron_smelter_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("chernobylv:textures/energy_powered_smelter_gui.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -73,9 +69,7 @@ public class RawIronSmelterGUIGuiWindow extends ContainerScreen<RawIronSmelterGU
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Raw Iron Block Smelter", 6, 9, -12829636);
-		this.font.drawString(ms, "Coal", 25, 57, -12829636);
-		this.font.drawString(ms, "Raw Iron Block", 25, 21, -12829636);
+		this.font.drawString(ms, "Energy Powered Smelter", 6, 7, -12829636);
 	}
 
 	@Override
@@ -88,11 +82,5 @@ public class RawIronSmelterGUIGuiWindow extends ContainerScreen<RawIronSmelterGU
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 61, this.guiTop + 39, 60, 20, new StringTextComponent("Process"), e -> {
-			if (true) {
-				ChernobylvMod.PACKET_HANDLER.sendToServer(new RawIronSmelterGUIGui.ButtonPressedMessage(0, x, y, z));
-				RawIronSmelterGUIGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
 	}
 }

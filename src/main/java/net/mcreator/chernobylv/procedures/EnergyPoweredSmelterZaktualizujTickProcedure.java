@@ -1,8 +1,6 @@
 package net.mcreator.chernobylv.procedures;
 
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fluids.capability.IFluidHandler;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.energy.CapabilityEnergy;
 
 import net.minecraft.world.IWorld;
@@ -16,6 +14,8 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.chernobylv.item.EnergyCapsuleItem;
+import net.mcreator.chernobylv.block.RawIronBlockBlock;
 import net.mcreator.chernobylv.block.RawCoalBlockBlock;
 import net.mcreator.chernobylv.ChernobylvMod;
 
@@ -76,7 +76,7 @@ public class EnergyPoweredSmelterZaktualizujTickProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (1))) != 64))) {
-			if (((new Object() {
+			if ((((new Object() {
 				public ItemStack getItemStack(BlockPos pos, int sltid) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					TileEntity _ent = world.getTileEntity(pos);
@@ -87,14 +87,18 @@ public class EnergyPoweredSmelterZaktualizujTickProcedure {
 					}
 					return _retval.get();
 				}
-			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == RawCoalBlockBlock.block.asItem())) {
-				{
-					TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-					int _amount = (int) 200;
-					if (_ent != null)
-						_ent.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY, null)
-								.ifPresent(capability -> capability.drain(_amount, IFluidHandler.FluidAction.EXECUTE));
+			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == RawCoalBlockBlock.block.asItem()) && ((new Object() {
+				public ItemStack getItemStack(BlockPos pos, int sltid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null) {
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).copy());
+						});
+					}
+					return _retval.get();
 				}
+			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == EnergyCapsuleItem.block))) {
 				{
 					Entity _ent = entity;
 					if (_ent instanceof ServerPlayerEntity) {
@@ -108,12 +112,98 @@ public class EnergyPoweredSmelterZaktualizujTickProcedure {
 						}
 					}
 				}
+				{
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) _ent).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								((Slot) ((Map) invobj).get((int) (2))).decrStackSize((int) (1));
+								_current.detectAndSendChanges();
+							}
+						}
+					}
+				}
 				if (entity instanceof PlayerEntity) {
 					Container _current = ((PlayerEntity) entity).openContainer;
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
 							ItemStack _setstack = new ItemStack(Items.COAL);
+							_setstack.setCount((int) ((new Object() {
+								public int getAmount(IWorld world, BlockPos pos, int sltid) {
+									AtomicInteger _retval = new AtomicInteger(0);
+									TileEntity _ent = world.getTileEntity(pos);
+									if (_ent != null) {
+										_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+											_retval.set(capability.getStackInSlot(sltid).getCount());
+										});
+									}
+									return _retval.get();
+								}
+							}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if ((((new Object() {
+				public ItemStack getItemStack(BlockPos pos, int sltid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null) {
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).copy());
+						});
+					}
+					return _retval.get();
+				}
+			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == RawIronBlockBlock.block.asItem()) && ((new Object() {
+				public ItemStack getItemStack(BlockPos pos, int sltid) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null) {
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).copy());
+						});
+					}
+					return _retval.get();
+				}
+			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == EnergyCapsuleItem.block))) {
+				{
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) _ent).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+								_current.detectAndSendChanges();
+							}
+						}
+					}
+				}
+				{
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) _ent).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								((Slot) ((Map) invobj).get((int) (2))).decrStackSize((int) (1));
+								_current.detectAndSendChanges();
+							}
+						}
+					}
+				}
+				if (entity instanceof PlayerEntity) {
+					Container _current = ((PlayerEntity) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(Items.IRON_INGOT);
 							_setstack.setCount((int) ((new Object() {
 								public int getAmount(IWorld world, BlockPos pos, int sltid) {
 									AtomicInteger _retval = new AtomicInteger(0);

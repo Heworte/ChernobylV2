@@ -99,6 +99,126 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "raw_coal_loot"
+    },
+    {
+      "name": "RawIronBlock",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_block"
+    },
+    {
+      "name": "RawIronBlockSmelter",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_block_smelter"
+    },
+    {
+      "name": "RawIronSmelterGUI",
+      "type": "gui",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_smelter_gui"
+    },
+    {
+      "name": "RawIronBlockRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_block_recipe"
+    },
+    {
+      "name": "MediumRawIronIngot",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medium_raw_iron_ingot"
+    },
+    {
+      "name": "RawIronSmelterProcedure",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_smelter_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RawIronSmelterRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_smelter_recipe"
+    },
+    {
+      "name": "RawIronSmelterGUIProc",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_iron_smelter_gui_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -107,10 +227,13 @@
     "en_us": {
       "block.chernobylv.raw_coal_block": "Raw Coal Block",
       "block.chernobylv.raw_iron_ore_block": "Raw Iron Ore Block",
+      "block.chernobylv.raw_iron_block_smelter": "Raw Iron Block Smelter",
       "item.chernobylv.raw_iron": "Raw Iron",
+      "item.chernobylv.medium_raw_iron_ingot": "Medium Raw Iron Ingot",
       "item.chernobylv.raw_coal": "Raw Coal",
       "itemGroup.tabchernobyl": "Chernobyl",
-      "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block"
+      "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block",
+      "block.chernobylv.raw_iron_block": "Raw Iron Block"
     }
   },
   "foldersRoot": {
@@ -120,7 +243,7 @@
   "workspaceSettings": {
     "modid": "chernobylv",
     "modName": "chernobylv2",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "author": "Heworte",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

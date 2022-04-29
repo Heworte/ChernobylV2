@@ -10,7 +10,7 @@
     "textureBack": "rawcoaloreblock",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -130,8 +130,8 @@
         "value": "Blocks.STONE#0"
       }
     ],
-    "frequencyPerChunks": 30,
-    "frequencyOnChunk": 30,
+    "frequencyPerChunks": 5,
+    "frequencyOnChunk": 10,
     "minGenerateHeight": 30,
     "maxGenerateHeight": 50
   }

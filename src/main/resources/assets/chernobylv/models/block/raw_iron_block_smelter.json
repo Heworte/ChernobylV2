@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chernobylv:blocks/rawironsmelter",
+    "up": "chernobylv:blocks/rawironsmelter",
+    "north": "chernobylv:blocks/rawironsmelterfront",
+    "east": "chernobylv:blocks/rawironsmelter",
+    "south": "chernobylv:blocks/rawironsmelter",
+    "west": "chernobylv:blocks/rawironsmelter",
+    "particle": "chernobylv:blocks/rawironsmelter"
+  }
+}

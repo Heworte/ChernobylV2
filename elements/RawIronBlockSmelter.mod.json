@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "rawironore",
-    "textureTop": "rawironore",
-    "textureLeft": "rawironore",
-    "textureFront": "rawironore",
-    "textureRight": "rawironore",
-    "textureBack": "rawironore",
+    "texture": "rawironsmelter",
+    "textureTop": "rawironsmelter",
+    "textureLeft": "rawironsmelter",
+    "textureFront": "rawironsmelterfront",
+    "textureRight": "rawironsmelter",
+    "textureBack": "rawironsmelter",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Raw Iron Ore Block",
+    "name": "Raw Iron Block Smelter",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -43,10 +43,10 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:RawIron"
+      "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -99,20 +99,25 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CRIT"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "RawIronSmelterGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      2
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1
+    ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
@@ -121,9 +126,10 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "onRightClicked": {
+      "name": "RawIronSmelterGUIProc"
+    },
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -131,8 +137,8 @@
       }
     ],
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 30
+    "maxGenerateHeight": 64
   }
 }

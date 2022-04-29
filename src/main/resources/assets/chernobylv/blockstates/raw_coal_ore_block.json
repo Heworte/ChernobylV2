@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "chernobylv:block/raw_coal_ore_block"
+    },
+    "facing=east": {
+      "model": "chernobylv:block/raw_coal_ore_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chernobylv:block/raw_coal_ore_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chernobylv:block/raw_coal_ore_block",
+      "y": 270
     }
   }
 }

@@ -273,7 +273,7 @@ public class EnergyPoweredSmelterBlock extends ChernobylvModElements.ModElement 
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Energy Powered Smelter");
+			return new StringTextComponent("Electric Smelter");
 		}
 
 		@Override

@@ -5,7 +5,7 @@
     "texture": "energypoweredsmelter",
     "textureTop": "energypoweredsmelter",
     "textureLeft": "energypoweredsmelter",
-    "textureFront": "energypoweredsmelter",
+    "textureFront": "electricsmelterfront",
     "textureRight": "energypoweredsmelter",
     "textureBack": "energypoweredsmelter",
     "renderType": 10,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Energy Powered Smelter",
+    "name": "Electric Smelter",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,

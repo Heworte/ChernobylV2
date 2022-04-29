@@ -128,8 +128,8 @@ public class RawCoalOreBlockBlock extends ChernobylvModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 10)).range(60)
-					.square().func_242731_b(10);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 15)).range(60)
+					.square().func_242731_b(15);
 			event.getRegistry().register(feature.setRegistryName("raw_coal_ore_block"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("chernobylv:raw_coal_ore_block"), configuredFeature);
 		}

@@ -1,7 +1,6 @@
 {
   "item.minecraft.tipped_arrow.effect.test": "Arrow with Miner\u0027s Decoction",
   "block.chernobylv.raw_iron_block_smelter": "Raw Iron Block Smelter",
-  "block.chernobylv.generator": "Generator",
   "item.chernobylv.raw_coal": "Raw Coal",
   "block.chernobylv.raw_iron_block": "Raw Iron Block",
   "item.minecraft.splash_potion.effect.test": "Miner\u0027s Decoction Splash Edition",
@@ -11,7 +10,8 @@
   "item.chernobylv.raw_iron": "Raw Iron",
   "item.chernobylv.medium_raw_iron_ingot": "Medium Raw Iron Ingot",
   "item.minecraft.potion.effect.test": "Miner\u0027s Decoction",
+  "item.chernobylv.energy_capsule": "Energy Capsule",
   "itemGroup.tabchernobyl": "Chernobyl",
   "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block",
-  "block.chernobylv.energy_powered_smelter": "Energy Powered Smelter"
+  "block.chernobylv.energy_powered_smelter": "Electric Smelter"
 }

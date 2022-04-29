@@ -33,8 +33,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 159,
-          "y": 71
+          "x": 132,
+          "y": 62
         }
       },
       {
@@ -44,8 +44,36 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 240,
+          "x": 276,
           "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Smelt",
+          "onClick": {
+            "name": "EnergyPoweredSmelterZaktualizujTick"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Smelt",
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 132,
+          "y": 89
         }
       }
     ],

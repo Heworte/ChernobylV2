@@ -10,7 +10,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 
 import net.mcreator.chernobylv.potion.TestPotion;
-import net.mcreator.chernobylv.block.RawIronBlockBlock;
 import net.mcreator.chernobylv.block.RawCoalBlockBlock;
 
 @ChernobylvModElements.ModElement.Tag
@@ -26,7 +25,7 @@ public class MinersDecotionRecipeBrewingRecipe extends ChernobylvModElements.Mod
 	public static class CustomBrewingRecipe implements IBrewingRecipe {
 		@Override
 		public boolean isInput(ItemStack input) {
-			return input.getItem() == RawIronBlockBlock.block.asItem();
+			return input.getItem() == Items.POTION;
 		}
 
 		@Override

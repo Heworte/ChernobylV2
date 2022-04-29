@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "CUSTOM:RawIronBlock"
+      "value": "Items.POTIONITEM"
     },
     "brewingIngredientStack": {
       "value": "CUSTOM:RawCoalBlock"

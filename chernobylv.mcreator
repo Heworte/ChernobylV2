@@ -257,15 +257,6 @@
       "registry_name": "miners_decotion_recipe"
     },
     {
-      "name": "Generator",
-      "type": "block",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "generator"
-    },
-    {
       "name": "EnergyPoweredSmelter",
       "type": "block",
       "sortid": 26,
@@ -317,13 +308,13 @@
       }
     },
     {
-      "name": "EnergyPoweredSmelterProc",
+      "name": "EnergyPoweredSmelterZaktualizujTick",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "energy_powered_smelter_proc",
+      "registry_name": "energy_powered_smelter_zaktualizuj_tick",
       "metadata": {
         "dependencies": [
           {
@@ -350,75 +341,13 @@
       }
     },
     {
-      "name": "GeneratorGUI",
-      "type": "gui",
-      "sortid": 29,
+      "name": "EnergyCapsule",
+      "type": "item",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "generator_gui"
-    },
-    {
-      "name": "GeneratorGuiProc",
-      "type": "procedure",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "generator_gui_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GeneratorProc",
-      "type": "procedure",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "generator_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "energy_capsule"
     }
   ],
   "variable_elements": [],
@@ -427,7 +356,6 @@
     "en_us": {
       "item.minecraft.tipped_arrow.effect.test": "Arrow with Miner\u0027s Decoction",
       "block.chernobylv.raw_iron_block_smelter": "Raw Iron Block Smelter",
-      "block.chernobylv.generator": "Generator",
       "item.chernobylv.raw_coal": "Raw Coal",
       "block.chernobylv.raw_iron_block": "Raw Iron Block",
       "item.minecraft.splash_potion.effect.test": "Miner\u0027s Decoction Splash Edition",
@@ -437,9 +365,10 @@
       "item.chernobylv.raw_iron": "Raw Iron",
       "item.chernobylv.medium_raw_iron_ingot": "Medium Raw Iron Ingot",
       "item.minecraft.potion.effect.test": "Miner\u0027s Decoction",
+      "item.chernobylv.energy_capsule": "Energy Capsule",
       "itemGroup.tabchernobyl": "Chernobyl",
       "block.chernobylv.raw_coal_ore_block": "Raw Coal Ore Block",
-      "block.chernobylv.energy_powered_smelter": "Energy Powered Smelter"
+      "block.chernobylv.energy_powered_smelter": "Electric Smelter"
     }
   },
   "foldersRoot": {

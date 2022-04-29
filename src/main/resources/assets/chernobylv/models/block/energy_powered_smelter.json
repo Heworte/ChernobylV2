@@ -3,7 +3,7 @@
   "textures": {
     "down": "chernobylv:blocks/energypoweredsmelter",
     "up": "chernobylv:blocks/energypoweredsmelter",
-    "north": "chernobylv:blocks/energypoweredsmelter",
+    "north": "chernobylv:blocks/electricsmelterfront",
     "east": "chernobylv:blocks/energypoweredsmelter",
     "south": "chernobylv:blocks/energypoweredsmelter",
     "west": "chernobylv:blocks/energypoweredsmelter",

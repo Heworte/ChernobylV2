@@ -14,6 +14,14 @@
     "facing=west": {
       "model": "chernobylv:block/energy_powered_smelter",
       "y": 270
+    },
+    "facing=up": {
+      "model": "chernobylv:block/energy_powered_smelter",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "chernobylv:block/energy_powered_smelter",
+      "x": 90
     }
   }
 }

@@ -3,7 +3,7 @@
   "textures": {
     "down": "chernobylv:blocks/generator",
     "up": "chernobylv:blocks/generator",
-    "north": "chernobylv:blocks/generator",
+    "north": "chernobylv:blocks/generatorfront",
     "east": "chernobylv:blocks/generator",
     "south": "chernobylv:blocks/generator",
     "west": "chernobylv:blocks/generator",
